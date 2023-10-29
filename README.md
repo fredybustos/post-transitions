@@ -10,7 +10,9 @@ This project is a demo built with Astro to showcase smooth page transitions and 
 
 ## Demo
 
-You can check out the live demo of this project here: [Demo Link](https://your-demo-url.com)
+![transitions](/public/images/transition.gif)
+
+You can check out the live demo of this project here: [Demo Link](https://demo-transitions.netlify.app/)
 
 ## Getting Started
 
@@ -19,7 +21,7 @@ To get a local copy of the project up and running, follow these steps:
 1. **Clone the Repository:**
 
 ```sh
-git clone https://github.com/your-username/astro-transitions-demo.git
+git clone git@github.com:fredybustos/post-transitions.git
 ```
 
 2. **Navigate to the Project Directory:**
