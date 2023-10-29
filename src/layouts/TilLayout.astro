@@ -1,0 +1,51 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro"
+import type { FrontmatterProps } from '@/types/frontmatter';
+import { formatDate } from "@/utils/index";
+
+type Props = FrontmatterProps;
+
+const { frontmatter, url } = Astro.props;
+
+const { title, description, image, author, date } = frontmatter;
+
+---
+
+<MainLayout {title} {description}>
+  <main class="m max-w-screen-xl m-auto shadow-xl">
+    <header class="relative">
+       <img
+        src={image.src}
+        alt={image.alt}
+        class="w-full max-h-[600px] object-cover rounded-tr-2xl rounded-tl-2xl"
+      />
+      <h1 class='text-white text-center font-bold mb-10 text-5xl absolute bottom-16 left-[30%]' transition:name={`post ${url} title`}>{title}</h1>
+    </header>
+    <div class="p-5">
+      <div class="flex justify-between items-center mb-10" transition:name={`post ${url} author`}>
+        <span class="text-gray-400 text-sm">{author}</span>
+        <time datetime="date" class="text-gray-400 text-sm">{formatDate(date)}</time>
+      </div>
+      <p class="text text-gray-500" transition:name={`post ${url} desc`}>{description}</p>
+    </div>
+    <div class="prose prose-code:text-red-300 max-w-none mt-10 p-10">
+      <slot />
+    </div>
+  </main>
+</MainLayout>
+
+<style is:global>
+  code {
+    padding: 0.1em 0.3em;
+    color: #da415f;
+    background: #f9f2f4;
+    border-radius: 0.3em;
+    white-space: pre-wrap;
+  }
+  code::before {
+    display: none;
+  }
+  code::after {
+    display: none;
+  }
+</style>
