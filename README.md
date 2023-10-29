@@ -1,48 +1,45 @@
-# Astro Starter Kit: Basics
+# Astro Transitions Demo
+
+This project is a demo built with Astro to showcase smooth page transitions and display a list of posts with detailed information. It's a great starting point if you want to explore Astro's capabilities for creating dynamic and performant web applications.
+
+## Features
+
+- **Page Transitions**: Explore smooth and visually appealing transitions when navigating between pages.
+- **List of Posts**: View a list of posts with their titles and excerpts.
+- **Post Details**: Click on a post to view its full details, including the content and author information.
+
+## Demo
+
+You can check out the live demo of this project here: [Demo Link](https://your-demo-url.com)
+
+## Getting Started
+
+To get a local copy of the project up and running, follow these steps:
+
+1. **Clone the Repository:**
 
 ```sh
-npm create astro@latest -- --template basics
+git clone https://github.com/your-username/astro-transitions-demo.git
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+2. **Navigate to the Project Directory:**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+cd astro-transitions-demo
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+3. **Install Dependencies:**
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+npm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+4. **Run commands:**
 
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
