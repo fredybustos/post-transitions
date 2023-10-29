@@ -1,6 +1,5 @@
 {
   "name": "til-transitions",
-  "type": "module",
   "license": "MIT",
   "version": "0.0.1",
   "description": "Astro transitions demo",
