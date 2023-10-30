@@ -1,0 +1,37 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import { Icon } from 'astro-icon';
+---
+
+<MainLayout title='about' description='About us page'>
+  <section class="min-h-[calc(100vh-180px)]">
+    <div class="text-gray-600 mb-10">
+      <div class="flex justify-between items-baseline">
+        <h2 class="font font-medium text-3xl mb-8">About Astro Transitions Demo</h2>
+        <Icon name="vscode-icons:file-type-astro" class="w-1/6 h-1/6 mr-4"/>
+      </div>
+      <p class="mb-1">Astro Transitions Demo is a project designed to highlight the incredible capabilities of Astro and its potential for creating dynamic and high-performance web applications. 
+        This demo is a starting point for those eager to explore the power of Astro in delivering seamless and visually captivating page transitions, 
+        along with a streamlined presentation of posts and their details.
+      </p>
+    </div>
+    <div class="text-gray-600">
+      <h2 class="font font-medium text-3xl mb-8">Meet the Creator</h2>
+      <p class="mb-1"> With over five years of professional experience in software engineering, I have tackled various challenges and developed a deep understanding of web development.</p>
+      <p class="mb-1">My journey in the world of web development has allowed me to become proficient in JavaScript. I've worked with libraries such as ReactJS, Tailwind CSS, Material UI, and more to create dynamic and interactive web applications.</p>
+      <p class="mb-1"> I always keeping a keen eye on emerging technologies related to JavaScript. Staying up to date with the latest advancements is an integral part of my approach to software development.</p>
+      <p class="mb-1">This project is a reflection of my passion for exploring new technologies and pushing the boundaries of what can be achieved with web development. I invite you to join me on this journey to experience the future of web applications with Astro.</p>
+      <p class="mb-1">Experience the future of web navigation with our stunning page transitions. We've put a strong focus on creating smooth, visually appealing transitions that elevate your browsing experience. It's more than just moving from one page to another; it's a journey of fluidity and elegance.</p>
+    </div>
+  </section>
+  <div class="flex">
+    <p class="mr-1">Github page</p>
+    <a 
+      href="https://github.com/fredybustos" 
+      class="text text-blue-600" 
+      target="_blank"
+    >
+      Fredy Bustos
+    </a>
+  </div>
+</MainLayout>
