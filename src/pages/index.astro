@@ -6,8 +6,16 @@ const posts = await Astro.glob('./content/**/*.md')
 ---
 
 <Layout title="Home til" description='Homa page'>
-	<h1 class='text-5xl text-slate-700'>Today I Learned</span></h1>
-	<section class="flex gap-10">
+	<header class="relative max-h-[500px] rounded-tr-[50px] rounded-tl-[50px] mb-20">
+		<h1 class='text-5xl text-white absolute top-[30%] ml-10 flex flex-col'>
+			<span class="mb-6">Today</span>
+			<span>I Learned</span>
+		</h1>
+		<figure class="h-[500px] w-full">
+			<img src="/images/header.jpg" alt="header-img" class="w-full h-full object-cover object-top rounded-[50px]">
+		</figure>
+	</header>
+	<section class="grid grid-flow-dense gap-10 grid-cols-post">
 		{posts.map(({frontmatter, url}) => (
 			<TilCard
 				frontmatter={frontmatter}
