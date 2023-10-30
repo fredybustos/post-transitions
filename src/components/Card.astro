@@ -6,13 +6,13 @@ const { frontmatter, url } = Astro.props;
 const { title, image, description, author, date } = frontmatter;
 ---
 
-<article class="shadow-lg rounded-tr-lg rounded-tl-lg max-w-md">
+<article class="shadow-lg rounded-tr-[50px]  rounded-tl-[50px]">
 	<a href={url} aria-hidden="true" tabindex="-1">
 		<div transition:name={`post ${url} box`}>
 			<img
 				src={image.src}
 				alt={image.alt}
-				class="rounded-tr-lg rounded-tl-lg h-[350px] w-[100%] object-cover"
+				class="rounded-tr-[50px] rounded-tl-[50px] h-[350px] w-[100%] object-cover"
 				transition:name={`post ${url} image`}
 			/>
 		</div>
