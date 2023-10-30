@@ -12,12 +12,12 @@ const { title, description, image, author, date } = frontmatter;
 ---
 
 <MainLayout {title} {description}>
-  <main class="m max-w-screen-xl m-auto shadow-xl">
-    <header class="relative">
+  <main class="shadow-xl bg-transparent">
+    <header class="relative rounded-tr-[50px] rounded-tl-[50px]">
        <img
         src={image.src}
         alt={image.alt}
-        class="w-full max-h-[600px] object-cover rounded-tr-2xl rounded-tl-2xl"
+        class="w-full max-h-[600px] object-cover rounded-tr-[50px] rounded-tl-[50px]"
       />
       <h1 class='text-white text-center font-bold mb-10 text-5xl absolute bottom-16 left-[30%]' transition:name={`post ${url} title`}>{title}</h1>
     </header>

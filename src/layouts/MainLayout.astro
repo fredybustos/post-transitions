@@ -1,6 +1,7 @@
 ---
 import type { LayoutProps } from '@/types/layout';
-import MainHead from '@/layouts/MainHead.astro'
+import MainHead from '@/layouts/MainHead.astro';
+import Icon from 'astro-icon';
 
 type Props = LayoutProps;
 
@@ -10,9 +11,19 @@ const { title, description } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<MainHead {title} {description} />
-  <body>
-    <main>
-      <slot>Default Text</slot>
+  <body class="bg-[#f4eae1]">
+    <main class="max-w-screen-xl m-auto px-4 pb-40">
+      <nav class="flex justify-between py-6 px-6 sticky top-0 z-10 bg-[#f4eae1]">
+        <li class="list-none">
+          <a href="/">
+            <Icon name="mdi:xml" class="w-10 h-10"/>
+          </a>
+        </li>
+        <li class="list-none text-gray-600">
+          <a href="/about">About</a>
+        </li>
+      </nav>
+      <slot />
     </main>
   </body>
 </html>
